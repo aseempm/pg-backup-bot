@@ -1,9 +1,12 @@
 use anyhow::{Ok, Result};
+use dotenv::dotenv;
 use reqwest::Client;
 use serde_json::json;
 
 #[tokio::main]
 async fn main() -> Result<()> {
+    dotenv().ok();
+
     send_to_telegram().await?;
 
     Ok(())
