@@ -5,6 +5,7 @@ edition = "2024"
 
 [dependencies]
 anyhow = "1.0.98"
+dotenv = "0.15.0"
 reqwest = { version = "0.12.22", features = ["json"] }
 serde_json = "1.0.140"
 tokio = { version = "1.46.1", features = ["full"] }
