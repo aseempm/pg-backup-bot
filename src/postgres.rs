@@ -5,7 +5,7 @@ use std::{
 
 use anyhow::{Result, anyhow};
 
-pub async fn pg_backup() -> Result<String> {
+pub async fn backup() -> Result<String> {
     let host = env::var("DATABASE_HOST")?;
     let port = env::var("DATABASE_PORT")?;
     let db = env::var("DATABASE_NAME")?;

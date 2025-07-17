@@ -7,7 +7,7 @@ use reqwest::{Client, multipart};
 use tokio::fs::File;
 use tokio_util::codec::{BytesCodec, FramedRead};
 
-pub async fn send_to_telegram(file_path: &str) -> Result<()> {
+pub async fn send(file_path: &str) -> Result<()> {
     let bot_token = env::var("TELEGRAM_BOT_TOKEN")?;
     let chat_id = env::var("TELEGRAM_CHAT_ID")?;
 
