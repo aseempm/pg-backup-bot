@@ -1,5 +1,5 @@
 [package]
-name = "telegram-pg-backup-bot"
+name = "pg-backup-bot"
 version = "1.0.0"
 edition = "2024"
 
